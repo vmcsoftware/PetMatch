@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetMatch - Cadastrar Cachorro</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>🐶 Cadastrar seu Cão</h1>
+    <input type="text" id="dogName" placeholder="Nome do cão" />
+    <input type="text" id="dogBreed" placeholder="Raça" />
+    <input type="number" id="dogAge" placeholder="Idade (anos)" />
+    <select id="dogGender">
+      <option value="">Sexo</option>
+      <option value="Macho">Macho</option>
+      <option value="Fêmea">Fêmea</option>
+    </select>
+    <input type="text" id="dogCity" placeholder="Cidade" />
+    
+    <div class="photo-upload-container">
+      <label for="dogPhotoFile" class="photo-upload-label">
+        📷 Selecionar Foto do Cão
+      </label>
+      <input type="file" id="dogPhotoFile" accept="image/*" class="photo-upload-input" />
+      <div id="photoPreview" class="photo-preview" style="display: none;">
+        <img id="previewImage" src="" alt="Preview" />
+        <button type="button" id="removePhoto" class="remove-photo-btn">❌</button>
+      </div>
+    </div>
+    
+    <textarea id="dogDescription" placeholder="Descrição do cão"></textarea>
+    <button id="saveDogBtn">Salvar</button>
+    <div id="uploadProgress" class="upload-progress" style="display: none;">
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+      <span id="progressText">0%</span>
+    </div>
+    <p><a href="explorar.html">Ir para Explorar</a></p>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+  <script src="firebase/firebase-config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

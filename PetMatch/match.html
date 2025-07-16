@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetMatch - Matches</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>💖 Seus Likes</h1>
+    <div id="matchList"></div>
+    <p><a href="explorar.html">Voltar para Explorar</a></p>
+  </div>
+  card.innerHTML = `
+  <img src="${dog.photo}" alt="${dog.name}" style="width:100%;border-radius:8px;" />
+  <h3>${dog.name}</h3>
+  <p>Raça: ${dog.breed}</p>
+  <p>Idade: ${dog.age} anos</p>
+  <p>Sexo: ${dog.gender}</p>
+  <p>Cidade: ${dog.city}</p>
+  <button onclick="startChat('${dog.ownerId}', '${dogDoc.id}')">Iniciar Chat 💬</button>
+`;
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="firebase/firebase-config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

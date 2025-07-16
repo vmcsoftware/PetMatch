@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetMatch - Cadastro</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>🐾 Criar Conta no PetMatch</h1>
+    <input type="text" id="registerName" placeholder="Seu nome" />
+    <input type="email" id="registerEmail" placeholder="E-mail" />
+    <input type="password" id="registerPassword" placeholder="Senha" />
+    <button id="registerBtn">Cadastrar</button>
+    
+    <div class="divider">
+      <span>ou</span>
+    </div>
+    
+    <button id="googleSignUpBtn" class="google-btn">
+      <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google" />
+      Entrar com Google
+    </button>
+    
+    <p>Já tem conta? <a href="index.html">Entrar</a></p>
+  </div>
+
+  <!-- Firebase scripts e seu app.js -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="firebase/firebase-config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
